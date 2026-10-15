@@ -1,17 +1,17 @@
 /* 課題1: テキストスタイリング */
-.large-text {
+.large-text {font-size:24px;
     /* TODO: ここに24pxのフォントサイズを設定 */
 }
 
-.colored-text {
+.colored-text {color:blue;
     /* TODO: ここに青色を設定 */
 }
 
-.bold-text {
+.bold-text {font-weight:bold;
     /* TODO: ここに太字を設定 */
 }
 
-.center-text {
+.center-text {text-align:center;
     /* TODO: ここに中央揃えを設定 */
 }
 
@@ -22,20 +22,24 @@
     margin: 10px;
 }
 
-.box1 {
+.box1 {background-color: red;
     /* TODO: ここに赤い背景色を設定 */
 }
 
-.box2 {
+.box2 {background-color: green;
+       color: white;
     /* TODO: ここに緑の背景色と白文字を設定 */
 }
 
-.box3 {
+.box3 {background-color: blue;
+       border-radius: 10px;
     /* TODO: ここに青い背景色と角丸を設定 */
 }
 
 /* 課題3: レスポンシブデザイン基礎 */
-.responsive-grid {
+.responsive-grid {display: grid;
+                  grid-template-columns: repeat(2, 1fr);
+                  gap: 10px;
     /* TODO: ここにCSS Gridの設定を追加 */
     /* ヒント: display: grid を使用 */
     /* ヒント: grid-template-columns で列を設定 */
@@ -46,6 +50,10 @@
     padding: 20px;
     border: 1px solid #ddd;
 }
-
+@media (max-width: 768px) {
+    .responsive-grid {
+        grid-template-columns: 1fr;
+    }
+}
 /* TODO: メディアクエリを追加してレスポンシブ対応 */
 /* ヒント: @media (max-width: 768px) を使用 */
